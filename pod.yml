@@ -1,10 +1,10 @@
 apiVersion: V1
 kind: Pod
 metadata:
-  name: vinay
+  name: Vinay
 spec:
   containers:
   - name: nginx
     image: nginx
-  ports:
-   - container port: 80
+    ports:
+    - containerPort: 80
