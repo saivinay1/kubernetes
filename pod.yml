@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: Vinay
+  name: vinay
 spec:
   containers:
   - name: nginx
