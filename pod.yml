@@ -1,0 +1,10 @@
+api version: v1
+kind: pod
+metadata:
+  name: vinay
+spec:
+  containers:
+    -name: nginx
+    -pod:  nginx
+  ports:
+   -container port: 80
