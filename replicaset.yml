@@ -1,7 +1,7 @@
-apiVersion: v1
+apiVersion: apps/v1
 kind: Replicaset
 metadata:
-  name: vinay
+  name: nginx-pod
 spec:
   replicas: 1
   selector:
@@ -12,6 +12,8 @@ spec:
     labels:
     app: nginx
   spec:
-   container:
-    ports:
-     containerPort: 80
+   containers:
+   - name: nginx
+     image: nginx
+     ports:
+     - containerPort: 80
