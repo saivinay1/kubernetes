@@ -2,23 +2,20 @@ apiVersion: v1
 kind: Deployment
 metadata:
   # Unique key of the Deployment instance
-  name: nginx-deployment
+  name: vinay
 spec:
-  # 3 Pods should exist at all times.
+  # 1 Pod should exist at all times.
   replicas: 1
   selector:
     matchLabels:
-    app: nginx
+      app: nginx
   template:
     metadata:
       labels:
-        # Apply this label to pods and default
-        # the Deployment label selector to this value
         app: nginx
     spec:
       containers:
-      - name: nginx-container
-        # Run this image
+      - name: nginx
         image: ravi2krishna/login-2429
         ports:
         - containerPort: 80
